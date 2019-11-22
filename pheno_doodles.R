@@ -45,7 +45,7 @@ hycu.dia<-hycu%>%
   summarize(n = sum(Larvae, na.rm=TRUE))
 
 ggplot(hycu.dia, aes(date))+geom_density(aes(fill=locale), alpha=.5)+
-  facet_grid(Year~MOTH_sp)
+  facet_grid(Year~MOTH_sp, scales='free_y')
 
 ## date of 50% occurence happens
 
